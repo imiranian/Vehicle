@@ -1,0 +1,711 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Dujin = Instance.new("ScreenGui")
+local MainMenu = Instance.new("Frame")
+local Framezir = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local stats = Instance.new("TextButton")
+local Setting = Instance.new("TextButton")
+local Tools_2 = Instance.new("Frame")
+local TpCrate = Instance.new("TextButton")
+local Tptocar = Instance.new("TextButton")
+local SuperCar = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local GiveAllPerks = Instance.new("TextButton")
+local CrateEsp = Instance.new("TextButton")
+local Stats = Instance.new("Frame")
+local Nitro = Instance.new("TextButton")
+local Nittex = Instance.new("TextBox")
+local Nitrof = Instance.new("TextButton")
+local nitftex = Instance.new("TextBox")
+local Jump = Instance.new("TextButton")
+local jumptex = Instance.new("TextBox")
+local Toque = Instance.new("TextButton")
+local Toquetex = Instance.new("TextBox")
+local Speed = Instance.new("TextButton")
+local Speedtex = Instance.new("TextBox")
+local Setting_2 = Instance.new("Frame")
+local Rainbow = Instance.new("TextButton")
+local Toggelbox = Instance.new("TextBox")
+local Toggelt = Instance.new("TextLabel")
+local Pink = Instance.new("TextButton")
+local Green = Instance.new("TextButton")
+local Default = Instance.new("TextButton")
+local Home_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Pass = Instance.new("Frame")
+local Passto = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+Dujin.Name = "Dujin"
+Dujin.Parent = game.CoreGui
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = Dujin
+MainMenu.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+MainMenu.BorderColor3 = Color3.fromRGB(202, 223, 9)
+MainMenu.Position = UDim2.new(0.070362471, 0, 0.415584415, 0)
+MainMenu.Size = UDim2.new(0, 392, 0, 254)
+MainMenu.Visible = false
+MainMenu.Draggable = true
+MainMenu.Active = true
+
+Framezir.Name = "Framezir"
+Framezir.Parent = MainMenu
+Framezir.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Framezir.BorderColor3 = Color3.fromRGB(202, 223, 9)
+Framezir.Position = UDim2.new(0, 0, 0.893700778, 0)
+Framezir.Size = UDim2.new(0, 392, 0, 27)
+
+Home.Name = "Home"
+Home.Parent = Framezir
+Home.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Home.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Home.Position = UDim2.new(0.025510205, 0, 0.148148149, 0)
+Home.Size = UDim2.new(0, 81, 0, 18)
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 0)
+Home.TextSize = 14.000
+
+Tools.Name = "Tools"
+Tools.Parent = Framezir
+Tools.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Tools.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Tools.Position = UDim2.new(0.275456488, 0, 0.148148149, 0)
+Tools.Size = UDim2.new(0, 81, 0, 18)
+Tools.Font = Enum.Font.SourceSans
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.fromRGB(255, 255, 0)
+Tools.TextSize = 14.000
+
+stats.Name = "stats"
+stats.Parent = Framezir
+stats.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+stats.BorderColor3 = Color3.fromRGB(49, 49, 49)
+stats.Position = UDim2.new(0.520408154, 0, 0.148148149, 0)
+stats.Size = UDim2.new(0, 81, 0, 18)
+stats.Font = Enum.Font.SourceSans
+stats.Text = "Stats"
+stats.TextColor3 = Color3.fromRGB(255, 255, 0)
+stats.TextSize = 14.000
+
+Setting.Name = "Setting"
+Setting.Parent = Framezir
+Setting.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Setting.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Setting.Position = UDim2.new(0.77035445, 0, 0.148148149, 0)
+Setting.Size = UDim2.new(0, 81, 0, 18)
+Setting.Font = Enum.Font.SourceSans
+Setting.Text = "Setting"
+Setting.TextColor3 = Color3.fromRGB(255, 255, 0)
+Setting.TextSize = 14.000
+
+Tools_2.Name = "Tools"
+Tools_2.Parent = MainMenu
+Tools_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Tools_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Tools_2.Position = UDim2.new(0.025510205, 0, 0.0472440943, 0)
+Tools_2.Size = UDim2.new(0, 373, 0, 203)
+Tools_2.Visible = false
+
+TpCrate.Name = "TpCrate"
+TpCrate.Parent = Tools_2
+TpCrate.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TpCrate.Position = UDim2.new(0.0589812323, 0, 0.0985221639, 0)
+TpCrate.Size = UDim2.new(0, 148, 0, 30)
+TpCrate.Font = Enum.Font.SourceSans
+TpCrate.Text = "Tp Crate"
+TpCrate.TextColor3 = Color3.fromRGB(211, 211, 211)
+TpCrate.TextSize = 14.000
+
+Tptocar.Name = "Tptocar"
+Tptocar.Parent = Tools_2
+Tptocar.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Tptocar.Position = UDim2.new(0.536193013, 0, 0.0985221639, 0)
+Tptocar.Size = UDim2.new(0, 148, 0, 30)
+Tptocar.Font = Enum.Font.SourceSans
+Tptocar.Text = "Tp To Car"
+Tptocar.TextColor3 = Color3.fromRGB(211, 211, 211)
+Tptocar.TextSize = 14.000
+
+SuperCar.Name = "SuperCar"
+SuperCar.Parent = Tools_2
+SuperCar.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+SuperCar.Position = UDim2.new(0.536193013, 0, 0.384236455, 0)
+SuperCar.Size = UDim2.new(0, 148, 0, 30)
+SuperCar.Font = Enum.Font.SourceSans
+SuperCar.Text = "Super Car"
+SuperCar.TextColor3 = Color3.fromRGB(211, 211, 211)
+SuperCar.TextSize = 14.000
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Tools_2
+AutoFarm.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+AutoFarm.Position = UDim2.new(0.0589812323, 0, 0.384236455, 0)
+AutoFarm.Size = UDim2.new(0, 148, 0, 30)
+AutoFarm.Font = Enum.Font.SourceSans
+AutoFarm.Text = "Auto Farm"
+AutoFarm.TextColor3 = Color3.fromRGB(211, 211, 211)
+AutoFarm.TextSize = 14.000
+
+GiveAllPerks.Name = "GiveAllPerks"
+GiveAllPerks.Parent = Tools_2
+GiveAllPerks.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+GiveAllPerks.Position = UDim2.new(0.536193013, 0, 0.665024638, 0)
+GiveAllPerks.Size = UDim2.new(0, 148, 0, 30)
+GiveAllPerks.Font = Enum.Font.SourceSans
+GiveAllPerks.Text = "Give All Perks"
+GiveAllPerks.TextColor3 = Color3.fromRGB(211, 211, 211)
+GiveAllPerks.TextSize = 14.000
+
+CrateEsp.Name = "CrateEsp"
+CrateEsp.Parent = Tools_2
+CrateEsp.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+CrateEsp.Position = UDim2.new(0.0589812323, 0, 0.665024638, 0)
+CrateEsp.Size = UDim2.new(0, 148, 0, 30)
+CrateEsp.Font = Enum.Font.SourceSans
+CrateEsp.Text = "Crate Esp"
+CrateEsp.TextColor3 = Color3.fromRGB(211, 211, 211)
+CrateEsp.TextSize = 14.000
+
+Stats.Name = "Stats"
+Stats.Parent = MainMenu
+Stats.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Stats.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Stats.Position = UDim2.new(0.025510205, 0, 0.0472440943, 0)
+Stats.Size = UDim2.new(0, 373, 0, 203)
+Stats.Visible = false
+
+Nitro.Name = "Nitro"
+Nitro.Parent = Stats
+Nitro.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Nitro.Position = UDim2.new(0.0643431619, 0, 0.0640394092, 0)
+Nitro.Size = UDim2.new(0, 137, 0, 28)
+Nitro.Font = Enum.Font.SourceSans
+Nitro.Text = "Nitro Speed"
+Nitro.TextColor3 = Color3.fromRGB(211, 211, 211)
+Nitro.TextSize = 14.000
+
+Nittex.Name = "Nittex"
+Nittex.Parent = Stats
+Nittex.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+Nittex.Position = UDim2.new(0.50938338, 0, 0.0640394092, 0)
+Nittex.Size = UDim2.new(0, 158, 0, 28)
+Nittex.Font = Enum.Font.SourceSans
+Nittex.Text = ""
+Nittex.TextColor3 = Color3.fromRGB(195, 195, 195)
+Nittex.TextSize = 14.000
+
+Nitrof.Name = "Nitrof"
+Nitrof.Parent = Stats
+Nitrof.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Nitrof.Position = UDim2.new(0.0643431619, 0, 0.241379306, 0)
+Nitrof.Size = UDim2.new(0, 137, 0, 28)
+Nitrof.Font = Enum.Font.SourceSans
+Nitrof.Text = "Nitro Force"
+Nitrof.TextColor3 = Color3.fromRGB(211, 211, 211)
+Nitrof.TextSize = 14.000
+
+nitftex.Name = "nitftex"
+nitftex.Parent = Stats
+nitftex.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+nitftex.Position = UDim2.new(0.50938338, 0, 0.241379306, 0)
+nitftex.Size = UDim2.new(0, 158, 0, 28)
+nitftex.Font = Enum.Font.SourceSans
+nitftex.Text = ""
+nitftex.TextColor3 = Color3.fromRGB(195, 195, 195)
+nitftex.TextSize = 14.000
+
+Jump.Name = "Jump"
+Jump.Parent = Stats
+Jump.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Jump.Position = UDim2.new(0.0643431619, 0, 0.428571403, 0)
+Jump.Size = UDim2.new(0, 137, 0, 28)
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = "Jump Height"
+Jump.TextColor3 = Color3.fromRGB(211, 211, 211)
+Jump.TextSize = 14.000
+
+jumptex.Name = "jumptex"
+jumptex.Parent = Stats
+jumptex.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+jumptex.Position = UDim2.new(0.50938338, 0, 0.428571403, 0)
+jumptex.Size = UDim2.new(0, 158, 0, 28)
+jumptex.Font = Enum.Font.SourceSans
+jumptex.Text = ""
+jumptex.TextColor3 = Color3.fromRGB(195, 195, 195)
+jumptex.TextSize = 14.000
+
+Toque.Name = "Toque"
+Toque.Parent = Stats
+Toque.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Toque.Position = UDim2.new(0.0643431619, 0, 0.605911314, 0)
+Toque.Size = UDim2.new(0, 137, 0, 28)
+Toque.Font = Enum.Font.SourceSans
+Toque.Text = "Toque"
+Toque.TextColor3 = Color3.fromRGB(211, 211, 211)
+Toque.TextSize = 14.000
+
+Toquetex.Name = "Toquetex"
+Toquetex.Parent = Stats
+Toquetex.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+Toquetex.Position = UDim2.new(0.50938338, 0, 0.605911314, 0)
+Toquetex.Size = UDim2.new(0, 158, 0, 28)
+Toquetex.Font = Enum.Font.SourceSans
+Toquetex.Text = ""
+Toquetex.TextColor3 = Color3.fromRGB(195, 195, 195)
+Toquetex.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = Stats
+Speed.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Speed.Position = UDim2.new(0.0643431619, 0, 0.788177311, 0)
+Speed.Size = UDim2.new(0, 137, 0, 28)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(211, 211, 211)
+Speed.TextSize = 14.000
+
+Speedtex.Name = "Speedtex"
+Speedtex.Parent = Stats
+Speedtex.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+Speedtex.Position = UDim2.new(0.50938338, 0, 0.788177311, 0)
+Speedtex.Size = UDim2.new(0, 158, 0, 28)
+Speedtex.Font = Enum.Font.SourceSans
+Speedtex.Text = ""
+Speedtex.TextColor3 = Color3.fromRGB(195, 195, 195)
+Speedtex.TextSize = 14.000
+
+Setting_2.Name = "Setting"
+Setting_2.Parent = MainMenu
+Setting_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Setting_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Setting_2.Position = UDim2.new(0.025510205, 0, 0.0472440943, 0)
+Setting_2.Size = UDim2.new(0, 373, 0, 203)
+Setting_2.Visible = false
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Setting_2
+Rainbow.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rainbow.Position = UDim2.new(0.134048253, 0, 0.0935960561, 0)
+Rainbow.Size = UDim2.new(0, 137, 0, 28)
+Rainbow.Font = Enum.Font.SourceSans
+Rainbow.Text = "Rainbow"
+Rainbow.TextColor3 = Color3.fromRGB(211, 211, 211)
+Rainbow.TextSize = 14.000
+
+Toggelbox.Name = "Toggelbox"
+Toggelbox.Parent = Setting_2
+Toggelbox.BackgroundColor3 = Color3.fromRGB(100, 102, 99)
+Toggelbox.Position = UDim2.new(0.820375323, 0, 0.128078818, 0)
+Toggelbox.Size = UDim2.new(0, 34, 0, 28)
+Toggelbox.Font = Enum.Font.SourceSans
+Toggelbox.Text = ""
+Toggelbox.TextColor3 = Color3.fromRGB(195, 195, 195)
+Toggelbox.TextSize = 14.000
+
+Toggelt.Name = "Toggelt"
+Toggelt.Parent = Setting_2
+Toggelt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggelt.BackgroundTransparency = 1.000
+Toggelt.Position = UDim2.new(0.632707775, 0, 0.128078818, 0)
+Toggelt.Size = UDim2.new(0, 70, 0, 27)
+Toggelt.Font = Enum.Font.SourceSans
+Toggelt.Text = "Gui Toggel:"
+Toggelt.TextColor3 = Color3.fromRGB(185, 185, 185)
+Toggelt.TextSize = 14.000
+
+Pink.Name = "Pink"
+Pink.Parent = Setting_2
+Pink.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Pink.Position = UDim2.new(0.134048253, 0, 0.330049247, 0)
+Pink.Size = UDim2.new(0, 137, 0, 28)
+Pink.Font = Enum.Font.SourceSans
+Pink.Text = "Pink"
+Pink.TextColor3 = Color3.fromRGB(211, 211, 211)
+Pink.TextSize = 14.000
+
+Green.Name = "Green"
+Green.Parent = Setting_2
+Green.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Green.Position = UDim2.new(0.134048253, 0, 0.561576366, 0)
+Green.Size = UDim2.new(0, 137, 0, 28)
+Green.Font = Enum.Font.SourceSans
+Green.Text = "Green"
+Green.TextColor3 = Color3.fromRGB(211, 211, 211)
+Green.TextSize = 14.000
+
+Default.Name = "Default"
+Default.Parent = Setting_2
+Default.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Default.Position = UDim2.new(0.134048253, 0, 0.788177371, 0)
+Default.Size = UDim2.new(0, 137, 0, 28)
+Default.Font = Enum.Font.SourceSans
+Default.Text = "Default"
+Default.TextColor3 = Color3.fromRGB(211, 211, 211)
+Default.TextSize = 14.000
+
+Home_2.Name = "Home"
+Home_2.Parent = MainMenu
+Home_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Home_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Home_2.Position = UDim2.new(0.025510205, 0, 0.0472440943, 0)
+Home_2.Size = UDim2.new(0, 373, 0, 203)
+
+TextLabel.Parent = Home_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0616622046, 0, 0.113300487, 0)
+TextLabel.Size = UDim2.new(0, 326, 0, 80)
+TextLabel.Font = Enum.Font.RobotoCondensed
+TextLabel.Text = "Dujin Vehicle Simulator Script Beta"
+TextLabel.TextColor3 = Color3.fromRGB(229, 229, 229)
+TextLabel.TextSize = 19.000
+
+TextLabel_2.Parent = Home_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0616622046, 0, 0.369458109, 0)
+TextLabel_2.Size = UDim2.new(0, 326, 0, 80)
+TextLabel_2.Font = Enum.Font.Highway
+TextLabel_2.Text = "By Kian#1245"
+TextLabel_2.TextColor3 = Color3.fromRGB(229, 229, 229)
+TextLabel_2.TextSize = 19.000
+
+Pass.Name = "Pass"
+Pass.Parent = Dujin
+Pass.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Pass.BorderColor3 = Color3.fromRGB(202, 223, 9)
+Pass.Position = UDim2.new(0.070362471, 0, 0.415584415, 0)
+Pass.Size = UDim2.new(0, 392, 0, 254)
+Pass.Draggable = true
+
+Passto.Name = "Passto"
+Passto.Parent = Pass
+Passto.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Passto.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Passto.Position = UDim2.new(0.025510205, 0, 0.0472440943, 0)
+Passto.Size = UDim2.new(0, 373, 0, 232)
+
+TextBox.Parent = Passto
+TextBox.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextBox.Position = UDim2.new(0.144772112, 0, 0.538793087, 0)
+TextBox.Size = UDim2.new(0, 263, 0, 30)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(220, 231, 0)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = Passto
+TextButton.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+TextButton.Position = UDim2.new(0.257372648, 0, 0.762931049, 0)
+TextButton.Size = UDim2.new(0, 181, 0, 30)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Enter"
+TextButton.TextColor3 = Color3.fromRGB(190, 190, 190)
+TextButton.TextSize = 14.000
+
+ImageLabel.Parent = Passto
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(35, 35, 35)
+ImageLabel.Position = UDim2.new(0.25469169, 0, 0.0382457599, 0)
+ImageLabel.Size = UDim2.new(0, 183, 0, 110)
+ImageLabel.Image = "rbxassetid://6017677654"
+
+-- Scripts:
+
+local function GWBF_fake_script() -- Tools_2.Script 
+	local script = Instance.new('Script', Tools_2)
+
+	function findCar()
+		local vehicle = workspace.Vehicles:getChildren()
+		for i=1,#vehicle do
+			if vehicle[i]:findFirstChild("owner") then
+				if vehicle[i].owner.Value == game.Players.LocalPlayer.Name then
+					myCar = vehicle[i]
+				end
+			end
+		end
+	end
+	script.Parent.TpCrate.MouseButton1Click:Connect(function()
+		local crates = workspace:getChildren()
+		for i=1,#crates do
+			if crates[i].ClassName == "Model" then
+				local crates2 = crates[i]:getChildren()
+				for i=1,#crates2 do
+					if crates2[i].ClassName == "Model" then
+						local crates3 = crates2[i]:getChildren()
+						for i=1,#crates3 do
+							if crates3[i].ClassName == "MeshPart" then
+								if crates3[i]:findFirstChild("Smoke") then
+									game.Players.LocalPlayer.Character:MoveTo(Vector3.new(crates3[i].Position.X+30,crates3[i].Position.Y+5,crates3[i].Position.Z))
+									wait()
+									game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(crates3[i].Position.X,crates3[i].Position.Y,crates3[i].Position.Z))
+									wait(4)
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	script.Parent.Tptocar.MouseButton1Click:Connect(function()
+		findCar()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(myCar.Chassis.VehicleSeat.Position+myCar.Chassis.VehicleSeat.SeatOffset.Value)
+	end)
+	script.Parent.SuperCar.MouseButton1Click:Connect(function()
+		findCar()
+		myCar.Handling.MaxSpeed.Value = 10000
+		myCar.Handling.Torque.Value = 55555
+		myCar.Handling.SteeringRadiusConstant.Value = 15000
+		myCar.Handling.FrictionRoad.Value = 250
+		myCar.Handling.Nitro.NitroSpeed.Value = 100000
+		myCar.Handling.Nitro.NitroForce.Value = 100000
+		myCar.Handling.Braking.Value = 100000
+		myCar.Handling.TurboJump.TurboJumpHeight.Value = 25
+	end)
+	script.Parent.AutoFarm.MouseButton1Click:Connect(function()
+		local waitTime = 3 --This will be the time it takes (seconds) until your car resets. See line 37
+		--Do not change anything below :)
+		local found = false
+		local go = true
+	
+		function findVehicle() --Finds your vehicle
+			while not found do --Loops until your vehicle has been found
+				local vehicles = Workspace.Vehicles:getChildren()
+				for i=1,#vehicles do
+					if vehicles[i]:findFirstChild'owner' then
+						if vehicles[i].owner.Value == game:GetService'Players'.LocalPlayer.Name then -- Found your vehicle
+							found = true --Setting found to true so loop breaks
+							vehicle = vehicles[i] -- Declares vehicle variable to your vehicle
+							vehStats = vehicle.Handling -- Declares vehStats variable to vehicle stats folder
+							vehStats.MaxSpeed.Value = 800
+							vehStats.Torque.Value = 60000
+							vehStats.SteeringRadiusConstant.Value = 120000000
+						elseif vehicles[i + 1] == nil and not found then
+							--Autorespawn would go here --Your vehicle does not exist in the Workspace
+						end
+					end
+				end
+				wait(1) --Waiting before checking again so we don't crash
+			end
+			wait(2) --We've found the car. Waiting so the car can be properly placed on the highway
+			vehicle.PrimaryPart = vehicle.Chassis.VehicleSeat
+		end
+	
+		function farm() --This is where the magic happens :)
+			while wait(waitTime) do --Waits x seconds before resetting car
+				vehicle:SetPrimaryPartCFrame(CFrame.new(-2470,60,777)) --Teleports vehicle to highway
+				game:GetService'VirtualUser':SetKeyUp("w") --Resets W key
+				game:GetService'VirtualUser':SetKeyDown("w") --Presses W key to go forward
+			end
+		end
+		findVehicle() --Calls the findVehicle function
+		while go do
+			if not pcall(farm()) then --Calls farm function & checks for errors
+				found = false  --If it errors, it sets found to false and continues looking for your vehicle.
+				findVehicle() 
+			end
+		end
+	end)
+	script.Parent.GiveAllPerks.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.UserId = 1099580
+	end)
+	script.Parent.CrateEsp.MouseButton1Click:Connect(function()
+		local crates = workspace:getChildren()
+		for i=1,#crates do
+			if crates[i].ClassName == "Model" then
+				local crates2 = crates[i]:getChildren()
+				for i=1,#crates2 do
+					if crates2[i].ClassName == "Model" then
+						local crates3 = crates2[i]:getChildren()
+						for i=1,#crates3 do
+							if crates3[i].ClassName == "MeshPart" then
+								if crates3[i]:findFirstChild("Smoke") then
+									if crates3[i]:findFirstChild("BoxHandleAdornment") then
+										crates3[i]:findFirstChild("BoxHandleAdornment"):Remove()
+									else
+										local a = Instance.new("BoxHandleAdornment",crates3[i])
+										a.Size = Vector3.new(10,500,6)
+										a.SizeRelativeOffset = Vector3.new(0,135,0)
+										a.Color3 = Color3.fromRGB(0,255,0)
+										a.Transparency = 0.5
+										a.AlwaysOnTop = true
+										a.Adornee = crates3[i]
+										a.ZIndex = 1
+										local b = Instance.new("BoxHandleAdornment",crates3[i])
+										b.Size = Vector3.new(10,4,6)
+										b.Color3 = Color3.fromRGB(0,0,255)
+										b.Transparency = 0.3
+										b.AlwaysOnTop = true
+										b.Adornee = crates3[i]
+										b.ZIndex = 1
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(GWBF_fake_script)()
+local function LXOH_fake_script() -- Stats.Script 
+	local script = Instance.new('Script', Stats)
+
+	script.Parent.Speed.MouseButton1Down:connect(function()
+		findCar()
+		myCar.Handling.MaxSpeed.Value = script.Parent.Speedtex.Text
+		myCar.Handling.SteeringRadiusConstant.Value = 15000
+	end)
+	
+	script.Parent.Toque.MouseButton1Down:connect(function()
+		findCar()
+		myCar.Handling.Torque.Value = script.Parent.Toquetex.Text
+	end)
+	
+	script.Parent.Nitro.MouseButton1Down:connect(function()
+		findCar()
+		myCar.Handling.Nitro.NitroSpeed.Value = script.Parent.Nittex.Text
+	end)
+	
+	script.Parent.Nitrof.MouseButton1Down:connect(function()
+		findCar()
+		myCar.Handling.Nitro.NitroForce.Value = script.Parent.nitftex.Text
+	end)
+	
+	script.Parent.Jump.MouseButton1Down:connect(function()
+		findCar()
+		myCar.Handling.TurboJump.TurboJumpHeight.Value = script.Parent.jumptex.Text
+	end)
+	
+	function findCar()
+		local vehicle = workspace.Vehicles:getChildren()
+		for i=1,#vehicle do
+			if vehicle[i]:findFirstChild("owner") then
+				if vehicle[i].owner.Value == game.Players.LocalPlayer.Name then
+					myCar = vehicle[i]
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(LXOH_fake_script)()
+local function PZJPNC_fake_script() -- Setting_2.Script 
+	local script = Instance.new('Script', Setting_2)
+
+	script.Parent.Pink.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainMenu.BorderColor3 = Color3.fromRGB(255, 15, 211)
+		script.Parent.Parent.Framezir.BorderColor3 = Color3.fromRGB(255, 15, 211)
+		script.Parent.Parent.Framezir.Home.TextColor3 = Color3.fromRGB(255, 15, 211)
+		script.Parent.Parent.Framezir.Tools.TextColor3 = Color3.fromRGB(255, 15, 211)
+		script.Parent.Parent.Framezir.stats.TextColor3 = Color3.fromRGB(255, 15, 211)
+		script.Parent.Parent.Framezir.Setting.TextColor3 = Color3.fromRGB(255, 15, 211)
+	end)
+	script.Parent.Green.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainMenu.BorderColor3 = Color3.fromRGB(17, 255, 5)
+		script.Parent.Parent.Framezir.BorderColor3 = Color3.fromRGB(17, 255, 5)
+		script.Parent.Parent.Framezir.Home.TextColor3 = Color3.fromRGB(17, 255, 5)
+		script.Parent.Parent.Framezir.Tools.TextColor3 = Color3.fromRGB(17, 255, 5)
+		script.Parent.Parent.Framezir.stats.TextColor3 = Color3.fromRGB(17, 255, 5)
+		script.Parent.Parent.Framezir.Setting.TextColor3 = Color3.fromRGB(17, 255, 5)
+	end)
+	script.Parent.Default.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainMenu.BorderColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framezir.BorderColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framezir.Home.TextColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framezir.Tools.TextColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framezir.stats.TextColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framezir.Setting.TextColor3 = Color3.fromRGB(255, 255, 0)
+	end)
+	script.Parent.Rainbow.MouseButton1Click:Connect(function()
+		while true do
+			for i = 0,1,0.01 do
+				script.Parent.Parent.Parent.MainMenu.BorderColor3 = Color3.fromHSV()(i,1,1)
+				script.Parent.Parent.Framezir.BorderColor3 = Color3.fromHSV()(i,1,1)
+				script.Parent.Parent.Framezir.Home.TextColor3 = Color3.fromHSV()(i,1,1)
+				script.Parent.Parent.Framezir.Tools.TextColor3 = Color3.fromHSV()(i,1,1)
+				script.Parent.Parent.Framezir.stats.TextColor3 = Color3.fromHSV()(i,1,1)
+				script.Parent.Parent.Framezir.Setting.TextColor3 = Color3.fromHSV()(i,1,1)
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(PZJPNC_fake_script)()
+local function WITIE_fake_script() -- MainMenu.Script 
+	local script = Instance.new('Script', MainMenu)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local gui = script.Parent.Parent.MainMenu -- direct the script to the gui, or frame here
+	local open = false
+	
+	mouse.KeyDown:connect(function(key)
+		if open == false then
+			open = true
+			if key:lower() == script.Parent.Setting.Toggelbox.Text then
+				gui.Visible  = false
+			end
+		else
+			open = false
+			if key:lower() == script.Parent.Setting.Toggelbox.Text then
+				gui.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(WITIE_fake_script)()
+local function DXEX_fake_script() -- MainMenu.Script 
+	local script = Instance.new('Script', MainMenu)
+
+	script.Parent.Framezir.Home.MouseButton1Click:Connect(function()
+		script.Parent.Home.Visible = true
+		script.Parent.Tools.Visible = false
+		script.Parent.Stats.Visible = false
+		script.Parent.Setting.Visible = false
+	end)
+	script.Parent.Framezir.Tools.MouseButton1Click:Connect(function()
+		script.Parent.Home.Visible = false
+		script.Parent.Tools.Visible = true
+		script.Parent.Stats.Visible = false
+		script.Parent.Setting.Visible = false
+	end)
+	script.Parent.Framezir.stats.MouseButton1Click:Connect(function()
+		script.Parent.Home.Visible = false
+		script.Parent.Tools.Visible = false
+		script.Parent.Stats.Visible = true
+		script.Parent.Setting.Visible = false
+	end)
+	script.Parent.Framezir.Setting.MouseButton1Click:Connect(function()
+		script.Parent.Home.Visible = false
+		script.Parent.Tools.Visible = false
+		script.Parent.Stats.Visible = false
+		script.Parent.Setting.Visible = true
+	end)
+end
+coroutine.wrap(DXEX_fake_script)()
+local function CFWFVJ_fake_script() -- Passto.Script 
+	local script = Instance.new('Script', Passto)
+
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if script.Parent.TextBox.Text == "Speed" then
+			game.CoreGui.Dujin.MainMenu.Visible = true
+			game.CoreGui.Dujin.Pass:Destroy()
+		else
+			game.Players.LocalPlayer:Kick()
+		end
+	end)
+end
+coroutine.wrap(CFWFVJ_fake_script)()
