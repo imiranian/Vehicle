@@ -700,7 +700,7 @@ local function CFWFVJ_fake_script() -- Passto.Script
 	local script = Instance.new('Script', Passto)
 
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
-		if script.Parent.TextBox.Text == "Speed" then
+		if script.Parent.TextBox.Text == "Valhalla.SynX" then
 			game.CoreGui.Dujin.MainMenu.Visible = true
 			game.CoreGui.Dujin.Pass:Destroy()
 		else
